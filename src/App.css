@@ -1,0 +1,65 @@
+/* Navbar styles */
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 35px;
+  /* font-size: 1rem; */
+  /* font-weight: 500; */
+  /* margin-bottom: 40px; */
+}
+
+.nav-right{
+  float: right;
+}
+.navbar a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.06em;
+  line-height: 28px;
+}
+/* Highlight active link */
+.navbar a.active {
+  color: red;
+}
+.navbar a {
+  color: rgb(4, 4, 4);
+  text-decoration: none;
+}
+
+/* Grid for the photos */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Each photo item */
+.photo-grid img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* For smaller screens (responsiveness) */
+@media (max-width: 768px) {
+  .navbar {
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .photo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+

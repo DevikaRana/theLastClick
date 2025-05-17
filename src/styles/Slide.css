@@ -1,0 +1,84 @@
+.slider {
+    height: 100vh;
+    color: white;
+    background: black;
+  }
+  
+  .text-column {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    text-align: left;
+  }
+  
+  .text-column h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .text-column .sub {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .image-column {
+    flex: 4;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .controls button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .icons i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .social-icons a {
+    display: inline-flex;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.2s;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.1);
+  }
+  
+  .social-icons .yt-icon {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  
+  .copyright {
+    font-size: 13px;
+    color: #aaa;
+    line-height: 1.5;
+  }
+  

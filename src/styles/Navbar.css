@@ -1,0 +1,33 @@
+.custom-navbar {
+    height: 70px;
+    background: rgba(34, 34, 34, 0.5); /* semi-transparent */
+    backdrop-filter: blur(6px);     /* glass blur effect */
+    z-index: 1000;
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1.8rem;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #ccc;
+  }
+  
+  .navbar-menu-icon {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+  }
+  
