@@ -11,6 +11,7 @@ const About = lazy(() => import("../pages/About"));
 const ContactUs = lazy(() => import("../pages/ContactUs"));
 const GallerySlider = lazy(() => import("../components/GallerySlider"));
 const CreativePhtography = lazy(() => import("../pages/CreativePhtography"));
+const PhotographyShowcase = lazy(() => import("../pages/PhotographyShowcase"));
 
 function AppRoutes() {
   return (
@@ -25,6 +26,7 @@ function AppRoutes() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactUs />} /> {/* ✅ Fixed Contact route */}
           <Route path="/explore-creative-photography" element={<CreativePhtography />} /> 
+             <Route path="/explore-photography-showcase" element={<PhotographyShowcase />} /> 
           <Route path="/wedding" element={<GallerySlider slideIndex={0} />} />
           <Route path="/engagement" element={<GallerySlider slideIndex={1} />} />
         </Route>

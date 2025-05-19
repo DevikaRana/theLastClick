@@ -1,20 +1,24 @@
 import React from "react";
 import "../styles/ContactUs.css";
+import contactUsImage from '../../public/images/contactUs.jpg'; // Import the image
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { EmailIcon, Location, Phone } from "../components/SvgIcons";
 
 const ContactSection = () => {
+  const contactHeroStyle = {
+    backgroundImage: `url(${contactUsImage})`
+  };
   return (
     <section className="">
-      <div className="contact-hero">
-        <p className="help-text">Need Help</p>
-        <h2 className="contact-title">CONTACT US</h2>
-        <p className="contact-subtext">
-          Thank you for your interest in our photography services. We would love to hear from you and
-          answer any questions you may have. Please feel free to reach out to us using any of the
-          following methods:
-        </p>
-      </div>
+        <section className="contact-hero" style={contactHeroStyle}>
+      <p className="help-text">Need Help</p>
+      <h2 className="contact-title">CONTACT US</h2>
+      <p className="contact-subtext">
+        Thank you for your interest in our photography services. We would love to hear from you and
+        answer any questions you may have. Please feel free to reach out to us using any of the
+        following methods:
+      </p>
+    </section>
 
       <div className="contact-section">
       <Container className="info-boxes mb-5">

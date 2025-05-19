@@ -2,7 +2,7 @@
 export const slidesData = [
     {
         image: '/images/creativePhotos.jpg',
-        heading: 'Creative Photography ',
+        heading: 'Creative Photography',
         subheading: '',
         description: 'Blacksilver for WordPress with rich features for professional photographers. Capture and present using variety of features.',
         buttonText: 'Explore',
@@ -14,17 +14,18 @@ export const slidesData = [
         subheading: '',
         description: 'Blacksilver for WordPress with rich features for professional photographers. Capture and present using variety of features.',
         buttonText: 'Explore',
+        link:'/explore-photography-showcase'
       },
       {
         image: '/images/weddingGallery.jpg', // ✅ Just use the relative path
-        heading: 'Wedding Galleries',
+        heading: 'Wedding Galleries  ',
         subheading: 'Blacksilver for WordPress with rich features for professional photographers.',
         description: 'Blacksilver for WordPress with rich features for professional photographers. Capture and present using variety of features.',
         buttonText: 'Explore',
       },
       {
         image: '/images/modelsGallery.jpg',
-        heading: 'Models Galleries',
+        heading: 'Model Galleries',
         subheading: '',
         description: 'Blacksilver for WordPress with rich features for professional photographers. Capture and present using variety of features.',
         buttonText: 'Explore',

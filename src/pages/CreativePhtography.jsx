@@ -31,6 +31,7 @@ const CreativePhtography = () => {
           the impenetrable foliage of my trees.
         </p>
       </div>
+      
       <PhotoGrid photos={photoPaths} />
 
       <footer className="footer">

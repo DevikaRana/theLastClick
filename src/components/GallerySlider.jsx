@@ -21,7 +21,7 @@ const GallerySlider = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const { image, heading, subheading, description, buttonText } = slidesData[current];
+  const { image, heading, subheading, description, buttonText,link } = slidesData[current];
 
   return (
     <div className="slider d-flex flex-column flex-md-row">
@@ -30,7 +30,7 @@ const GallerySlider = () => {
         <h1>{heading.split(' ')[0]} <br />{heading.split(' ')[1]}</h1>
         {/* <p className="sub">{subheading}</p> */}
         <p>{description}</p>
-        <Link to="/explore-creative-photography"><button style={{border:'2px red solid', background:'transparent', maxWidth:'140px'}}>{buttonText}</button></Link>
+        <Link to={link}><button style={{border:'2px red solid', background:'transparent', maxWidth:'140px'}}>{buttonText}</button></Link>
         
         </div>
       

@@ -3,12 +3,10 @@ import "../styles/Creative.css";
 
 const PhotoGrid = ({ photos = [] }) => {
   const [selected, setSelected] = useState(null);
-
   const closeModal = () => setSelected(null);
 
   return (
     <>
-
       <section className="photo-grid-wrapper">
         {photos.map((src, idx) => (
           <img
