@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 361px;
-    background-image: url('../../public/images/creativeExplore.jpg'); /* <-- replace with your actual path */
+    background-image: url('../../public/images/collection.jpg'); /* <-- replace with your actual path */
     background-size: cover;
     background-position: center;
     display: flex;

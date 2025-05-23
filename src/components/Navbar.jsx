@@ -12,10 +12,10 @@ const Navbar = () => {
 
       <nav className="navbar-links d-none d-md-flex mx-auto">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link> {/* Placeholder */}
-        <Link to="/explore-creative-photography">Portfolio</Link> {/* Placeholder */}
-        <Link to="/blog">Blog</Link> {/* Placeholder */}
+        <Link to="/explore-creative-photography">Creative</Link> {/* Placeholder */}
+        <Link to="/collection">Collection</Link> {/* Placeholder */}
         <Link to="/page">Page</Link> {/* Placeholder */}
+        <Link to="/about">About</Link> {/* Placeholder */}
         <Link to="/contact">Contact</Link> {/* ✅ Correct route for ContactUs */}
       </nav>
 
