@@ -55,23 +55,46 @@
 
 /* --- PHOTO GRID WRAPPER --- */
 .photo-grid-wrapper {
-  column-count: 3;
-  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
   padding: 50px 210px 20px;
+  justify-content: center;
 }
 
+
 /* --- INDIVIDUAL CARDS --- */
-.photo-card {
-  display: inline-block;
-  width: 260px;
-  background-color: #111;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  
+/* For Masonry layout */
+.my-masonry-grid {
+  display: flex;
+  margin: 50px 220px 20px; /* gutter offset */
+  width: auto;
 }
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.photo-card {
+  background-color: #111;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.photo-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.photo-text {
+  padding: 10px 0 0 0;
+}
+
 
 /* OPTIONAL: hover effect */
 .photo-card:hover {
@@ -79,9 +102,10 @@
 }
 
 /* --- IMAGE STYLING --- */
+
+
 .photo-img {
   width: 100%;
-  /* height: auto; */
   object-fit: cover;
   display: block;
   filter: grayscale(100%);
@@ -144,4 +168,57 @@
     column-count: 1;
     padding: 20px;
   }
+}
+
+/* ---------- Modal ---------- */
+
+.photo-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 999999;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.photo-modal-inner {
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.modal-img {
+  max-height: 90vh;
+  max-width: 90vw;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
+}
+
+/* ---------- Close Button ---------- */
+
+.close-btn {
+  position: absolute;
+  top: -10px;
+  right: 4px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 2rem;
+  background: none;
+  color: #fff8f8;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.1);
 }
