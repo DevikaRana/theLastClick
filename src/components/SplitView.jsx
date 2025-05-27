@@ -3,11 +3,11 @@ import "../styles/SplitImage.css";
 import weddingImg from "../../public/images/SplitWeddingImage.jpg"; // update the path accordingly
 
 const SplitImage = () => {
-  const slices = 9;
+  const slices = 7;
   const gap = 6;
 
   return (
-    <div style={{marginTop:'-50px', zIndex:999999}} className="container col-md-10">
+    <div style={{marginTop:'-50px', zIndex:999999}} className="container col-md-8">
       <div className="split-image-wrapper">
         {[...Array(slices)].map((_, index) => {
           const width = `calc(${100 / slices}% - ${gap - gap / slices}px)`;

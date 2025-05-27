@@ -30,13 +30,27 @@
   position: relative;
   z-index: 2;
 }
-
-.contact-hero .help-text {
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  opacity: 0.8;
+.help-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 2rem 0;
 }
+
+.help-text::before,
+.help-text::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background-color: #ccc; /* light gray line */
+  margin: 0 1rem;
+  width: 4em;
+}
+
+  
 
 .contact-hero .contact-title {
   font-size: 36px;
