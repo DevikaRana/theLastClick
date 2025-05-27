@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   height: 361px;
-  background-image: url("../../public/images/creativeExplore.jpg"); /* <-- replace with your actual path */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -21,7 +20,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(5, 1, 21, 0.68); /* #050115 with 79% opacity */
+  background-color: rgba(5, 1, 21, 0.68);
   z-index: 1;
 }
 
@@ -36,7 +35,6 @@
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 8px;
-  color: #fff;
   opacity: 0.8;
 }
 
@@ -53,28 +51,19 @@
   color: #ddd;
 }
 
-/* --- PHOTO GRID WRAPPER --- */
-.photo-grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
-  padding: 50px 210px 20px;
-  justify-content: center;
-}
-
-
-/* --- INDIVIDUAL CARDS --- */
-/* For Masonry layout */
+/* --- MASONRY GRID --- */
 .my-masonry-grid {
   display: flex;
-  margin: 50px 220px 20px; /* gutter offset */
+  margin: 50px 220px 20px;
   width: auto;
+  max-width: 1400px;
 }
 .my-masonry-grid_column {
-  padding-left: 30px; /* gutter size */
+  padding-left: 30px;
   background-clip: padding-box;
 }
 
+/* --- CARD --- */
 .photo-card {
   background-color: #111;
   color: #fff;
@@ -83,31 +72,22 @@
   margin-bottom: 30px;
   padding: 10px;
   text-align: center;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-card:hover {
+  transform: translateY(-5px);
 }
 
 .photo-img {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
-}
-
-.photo-text {
-  padding: 10px 0 0 0;
-}
-
-
-/* OPTIONAL: hover effect */
-.photo-card:hover {
-  transform: translateY(-5px);
-}
-
-/* --- IMAGE STYLING --- */
-
-
-.photo-img {
-  width: 100%;
-  object-fit: cover;
-  display: block;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
@@ -116,18 +96,16 @@
   filter: grayscale(0%);
 }
 
-/* --- TEXT STYLING --- */
+/* --- TEXT --- */
 .photo-text {
   padding: 10px;
   font-size: 14px;
-  color: #fff;
   text-align: center;
 }
 
 .photo-text h6 {
   margin-bottom: 5px;
   font-weight: bold;
-  color: #fff;
 }
 
 .photo-text p {
@@ -139,39 +117,14 @@
 .tall .photo-img {
   height: 450px;
 }
-
 .medium .photo-img {
   height: 280px;
 }
-
 .short .photo-img {
   height: 180px;
 }
 
-
-/* --- RESPONSIVE BREAKPOINTS --- */
-/* @media (max-width: 1440px) {
-  .photo-grid-wrapper {
-    column-count: 3;
-    padding: 40px;
-  }
-}  */
-@media (max-width: 992px) {
-  .photo-grid-wrapper {
-    column-count: 2;
-    padding: 40px;
-  }
-}
-
-@media (max-width: 576px) {
-  .photo-grid-wrapper {
-    column-count: 1;
-    padding: 20px;
-  }
-}
-
-/* ---------- Modal ---------- */
-
+/* --- MODAL --- */
 .photo-modal-overlay {
   position: fixed;
   inset: 0;
@@ -186,7 +139,7 @@
 
 @keyframes fadeIn {
   from { opacity: 0; }
-  to   { opacity: 1; }
+  to { opacity: 1; }
 }
 
 .photo-modal-inner {
@@ -202,8 +155,6 @@
   object-fit: contain;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
 }
-
-/* ---------- Close Button ---------- */
 
 .close-btn {
   position: absolute;
@@ -221,4 +172,22 @@
 
 .close-btn:hover {
   transform: scale(1.1);
+}
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 992px) {
+  .my-masonry-grid {
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-masonry-grid_column {
+    padding-left: 15px;
+  }
+  .photo-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

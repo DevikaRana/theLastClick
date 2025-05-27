@@ -22,6 +22,7 @@ export const slidesData = [
         subheading: 'Blacksilver for WordPress with rich features for professional photographers.',
         description: 'Blacksilver for WordPress with rich features for professional photographers. Capture and present using variety of features.',
         buttonText: 'Explore',
+        link:'/explore-wedding-gallery'
       },
       {
         image: '/images/modelsGallery.jpg',
@@ -30,8 +31,6 @@ export const slidesData = [
         description: 'Blacksilver for WordPress with rich features for professional photographers. Capture and present using variety of features.',
         buttonText: 'Explore',
       },
-  
-  
   ];
   
   

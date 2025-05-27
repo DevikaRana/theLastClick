@@ -1,0 +1,51 @@
+.split-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.split-slice {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+
+
+/* @media (max-width: 480px) {
+  .split-slice {
+    flex: 1 1 100%;
+    height: 100px !important;
+    margin: 5px !important;
+  }
+} */
+/* Hide SplitImage on small screens */
+/* Hide SplitImage on small screens */
+@media (max-width: 768px) {
+  .split-image-overlay {
+    display: none;
+  }
+}
+
+/* Ensure SplitImage container centers content */
+.split-image-overlay {
+  position: absolute;
+  bottom: -230px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: Center the inner slices */
+.split-image-wrapper {
+  display: flex;
+  justify-content: center;
+   flex-wrap: wrap;
+}

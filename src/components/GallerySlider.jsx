@@ -30,21 +30,16 @@ const GallerySlider = () => {
         <h1>{heading.split(' ')[0]} <br />{heading.split(' ')[1]}</h1>
         {/* <p className="sub">{subheading}</p> */}
         <p>{description}</p>
-        <Link to={link}><button style={{border:'2px red solid', background:'transparent', maxWidth:'140px'}}>{buttonText}</button></Link>
-        
+        <Link to={link}><button style={{border:'2px red solid', background:'transparent', maxWidth:'140px'}}>{buttonText}</button></Link>   
         </div>
-      
-
         <div className="social-icons d-flex justify-content-left flex-wrap gap-2 ">
               <a href="#"><i className="fab fa-facebook-f" /></a>
               <a href="#"><i className="fab fa-instagram" /></a>
               <a href="#"><i className="fab fa-behance" /></a>
               <a href="#"><i className="fab fa-linkedin-in" /></a>
               <a href="#"><i className="fab fa-pinterest-p" /></a>
-              <a href="#" className="yt-icon">W</a> {/* Replace with icon image if needed */}
-              
+              <a href="#" className="yt-icon">W</a> {/* Replace with icon image if needed */}          
             </div>
-
       </div>
 
       <div

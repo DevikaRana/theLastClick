@@ -24,7 +24,34 @@
     background-color: rgba(5, 1, 21, 0.68); /* #050115 with 79% opacity */
     z-index: 1;
   }
-  
+  .hero-with-overlay {
+  position: relative;
+}
+
+.contact-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px 150px 20px; /* add bottom padding for overlap space */
+  text-align: center;
+}
+
+.split-image-overlay {
+  position: absolute;
+  bottom: 30px; /* adjust this value to overlap more or less */
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: lift the SplitImage component */
+.split-image-wrapper {
+  z-index: 10;
+}
+
   .contact-hero .help-text,
   .contact-hero .contact-title,
   .contact-hero .contact-subtext {
@@ -63,41 +90,7 @@
   grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
   gap: 20px;
   justify-items: center;
-  padding: 50px 200px 20px; /* was 220px */
-}
-
-@media (max-width: 576px) {
-  .photo-grid-wrapper {
-    padding: 40px 15px 20px;
-    grid-template-columns: 1fr; /* Single column on small screens */
-  }
-
-  .photo-box {
-    width: 90vw;
-    height: auto;
-  }
-
-  .contact-hero {
-    height: 260px;
-    padding: 20px 10px;
-  }
-
-  .contact-hero .contact-title {
-    font-size: 26px;
-  }
-
-  .contact-hero .contact-subtext {
-    font-size: 14px;
-    max-width: 100%;
-  }
-
-  .footer {
-    text-align: center;
-  }
-
-  .footer .social-icons {
-    justify-content: center !important;
-  }
+  padding: 50px 220px 20px;
 }
 
 /* ---------- Thumbnails ---------- */
@@ -175,8 +168,6 @@
   transform: scale(1.1);
 }
 
-  
-  
   .footer {
     background-color: #0d0d0d;
     border-top: 1px solid #444;
