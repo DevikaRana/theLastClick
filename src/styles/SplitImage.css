@@ -28,7 +28,15 @@
 /* Hide SplitImage on small screens */
 @media (max-width: 768px) {
   .split-image-overlay {
-    display: none;
+    display: none !important;
+    margin:'0px !important'
+  }
+}
+/* Hide SplitImage for screens smaller than 992px (Bootstrap's 'lg') */
+@media (max-width: 991.98px) {
+  .split-image-overlay {
+    display: none !important;
+      margin:'0px !important'
   }
 }
 

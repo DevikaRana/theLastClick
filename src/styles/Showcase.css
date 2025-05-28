@@ -68,7 +68,7 @@
 /* --- MASONRY GRID --- */
 .my-masonry-grid {
   display: flex;
-  margin: 50px 220px 20px;
+  margin: 50px 180px 20px;
   width: auto;
   max-width: 1400px;
 }
