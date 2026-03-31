@@ -5,18 +5,18 @@ import PhotoGrid from "../components/PhotoGrid";
 
 const CreativePhtography = () => {
   const photoPaths = [
-    "../../public/images/creativeExplore/creative1.jpg",
-    "../../public/images/creativeExplore/creative2.jpg",
-    "../../public/images/creativeExplore/creative3.jpg",
-    "../../public/images/creativeExplore/creative4.jpg",
-    "../../public/images/creativeExplore/creative5.jpg",
-    "../../public/images/creativeExplore/creative6.jpg",
-    "../../public/images/creativeExplore/creative7.jpg",
-    "../../public/images/creativeExplore/creative8.jpg",
-    "../../public/images/creativeExplore/creative9.jpg",
-    "../../public/images/creativeExplore/creative10.jpg",
-    "../../public/images/creativeExplore/creative11.jpg",
-    "../../public/images/creativeExplore/creative12.jpg",
+    "/images/creativeExplore/creative1.jpg",
+    "/images/creativeExplore/creative2.jpg",
+    "/images/creativeExplore/creative3.jpg",
+    "/images/creativeExplore/creative4.jpg",
+    "/images/creativeExplore/creative5.jpg",
+    "/images/creativeExplore/creative6.jpg",
+    "/images/creativeExplore/creative7.jpg",
+    "/images/creativeExplore/creative8.jpg",
+    "/images/creativeExplore/creative9.jpg",
+    "/images/creativeExplore/creative10.jpg",
+    "/images/creativeExplore/creative11.jpg",
+    "/images/creativeExplore/creative12.jpg",
     // Add more paths as needed
   ];
   return (

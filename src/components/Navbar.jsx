@@ -17,7 +17,7 @@ const Navbar = () => {
 
       <nav className={`navbar-links d-none d-md-flex mx-auto`}>
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        {/* <Link to="/about">About</Link> */}
         <Link to="/explore-creative-photography">Creative</Link>
         <Link to="/explore-photography-showcase">Showcase</Link>
         <Link to="/explore-wedding-gallery">Wedding</Link>
